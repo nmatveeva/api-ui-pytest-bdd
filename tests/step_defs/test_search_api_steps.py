@@ -1,5 +1,5 @@
 """
-This module contains step definitions for search.feature
+This module contains step definitions for search_api.feature
 """
 
 import requests
@@ -8,7 +8,7 @@ from pytest_bdd import scenarios, parsers, given, then
 
 SEARCH_API = 'http://api.duckduckgo.com/'
 
-scenarios('../features/search.feature')
+scenarios('../features/search_api.feature')
 
 CONVERTERS = {
     'code': int,
