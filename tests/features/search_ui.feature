@@ -1,3 +1,4 @@
+@ui @search
 Feature: Search Web Browsing
   As a web user,
   I want to find information.

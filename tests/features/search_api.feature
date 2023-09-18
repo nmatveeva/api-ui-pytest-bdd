@@ -1,3 +1,4 @@
+@api @search
 Feature: Search Instant Answer API
   As an application developer,
   I want to get instant answer for search phrase via REST API,
