@@ -2,30 +2,13 @@
 This module contains steps definitions for search_ui.feature
 """
 
-import pytest
-
 from pytest_bdd import scenarios, parsers, given, when, then
-from selenium import webdriver
 
 from pages.search import SearchPage
 from pages.results import SearchResultsPage
 
 
 scenarios('../features/search_ui.feature')
-
-
-@pytest.fixture
-def browser():
-    b = webdriver.Firefox()
-    b.implicitly_wait(10)
-    yield b
-    b.quit()
-
-
-@given('the Search home page is displayed')
-def search_home(browser):
-    search_page = SearchPage(browser)
-    search_page.load()
 
 
 @when(parsers.parse('the user searches for "{phrase}"'))
